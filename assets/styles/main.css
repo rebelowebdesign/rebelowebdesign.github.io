@@ -418,14 +418,14 @@ nav.scrolled {
   border-top: none;
 }
 .services-also-label {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);
   margin-right: 8px;
 }
 .services-also-tag {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.08em;
   color: var(--muted);
   border: 1px solid var(--border);
