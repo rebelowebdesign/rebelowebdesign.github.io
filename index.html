@@ -89,7 +89,7 @@
         <div class="hero-sub">
             <p class="hero-desc">I provide custom web solutions for small businesses, brands, artists & independents.
                 From Shopify storefronts to landing pages, to one-of-a-kind digital experiences.</p>
-        <div class="hero-stats">
+            <div class="hero-stats">
                 <div class="stat-item">
                     <div class="stat-num">18</div>
                     <div class="stat-label">Projects Completed</div>
@@ -98,7 +98,7 @@
                     <div class="stat-num">9+</div>
                     <div class="stat-label">Yrs Experience</div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -110,7 +110,8 @@
                 <div class="section-tag">What I Build</div>
                 <h2 class="section-title">SERVICES</h2>
 
-                <p class="services-pitch">Built specifically for you. Clean design, fast load times, and a layout that works beautifully across every device — desktop, tablet, and mobile.</p>
+                <p class="services-pitch">Built specifically for you. Clean design, fast load times, and a layout that
+                    works beautifully across every device — desktop, tablet, and mobile.</p>
                 <a href="#contact" class="services-cta">Get a Free Quote →</a>
             </div>
 
@@ -194,14 +195,28 @@
                 <h2 class="section-title">PORTFOLIO</h2>
             </div>
         </div>
-
+        <div class="portfolio-filter reveal">
+            <span class="portfolio-filter-label">Filter by</span>
+            <select id="portfolioFilter">
+                <option value="all">All Projects</option>
+                <option value="Arts / Nonprofit">Arts / Nonprofit</option>
+                <option value="Telecom">Telecom</option>
+                <option value="Health & Fitness">Health & Fitness</option>
+                <option value="Music / Events">Music / Events</option>
+                <option value="Brand">Brand</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Web App">Web App</option>
+                <option value="Automotive">Automotive</option>
+                <option value="Studio">Studio</option>
+                <option value="UI / UX">UI / UX</option>
+            </select>
+        </div>
         <div class="portfolio-grid">
 
             <div class="portfolio-item featured reveal">
                 <a href="assets/media/frarts.png" data-fancybox="pitem1"
                     data-caption="Greater Fall River Arts Association">
-                    <img src="assets/media/frarts.png"
-                        alt="Greater Fall River Arts Association" loading="lazy">
+                    <img src="assets/media/frarts.png" alt="Greater Fall River Arts Association" loading="lazy">
                     <div class="portfolio-overlay">
                         <div class="portfolio-tag">Arts / Nonprofit</div>
                         <div class="portfolio-title">Fall River Arts Association</div>
@@ -211,12 +226,10 @@
             </div>
 
             <div class="portfolio-item reveal">
-                <a href="assets/media/aimes.png" data-fancybox="pitem2"
-                    data-caption="Aime's Auto Repair">
-                    <img src="assets/media/aimes.png" alt="Aime's Auto Repair"
-                        loading="lazy">
+                <a href="assets/media/aimes.png" data-fancybox="pitem2" data-caption="Aime's Auto Repair">
+                    <img src="assets/media/aimes.png" alt="Aime's Auto Repair" loading="lazy">
                     <div class="portfolio-overlay">
-                        <div class="portfolio-tag">Auto Repair</div>
+                        <div class="portfolio-tag">Automotive</div>
                         <div class="portfolio-title">Aime's Auto Repair</div>
                     </div>
                     <div class="portfolio-link-icon">↗</div>
@@ -224,8 +237,28 @@
             </div>
 
             <div class="portfolio-item reveal">
-                <a href="assets/media/ef.png" data-fancybox="pitem3"
-                    data-caption="EuroFibre Networks">
+                <a href="assets/media/wellnessgroup.png" data-fancybox="pitem17" data-caption="Wellness Group">
+                    <img src="assets/media/wellnessgroup.png" alt="Wellness Group" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Health & Fitness</div>
+                        <div class="portfolio-title">Caersws & Llanidloes Wellness</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+            <div class="portfolio-item reveal">
+                <a href="assets/media/sax.png" data-fancybox="pitem18" data-caption="Sax To The Rhythm">
+                    <img src="assets/media/sax.png" alt="Sax To The Rhythm" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Music / Events</div>
+                        <div class="portfolio-title">Sax To The Rhythm</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="assets/media/ef.png" data-fancybox="pitem3" data-caption="EuroFibre Networks">
                     <img src="assets/media/ef.png" alt="EuroFibre Networks" loading="lazy">
                     <div class="portfolio-overlay">
                         <div class="portfolio-tag">Telecom</div>
@@ -236,21 +269,7 @@
             </div>
 
             <div class="portfolio-item reveal">
-                <a href="assets/media/fitnesssite.png" data-fancybox="pitem4"
-                    data-caption="Thrive Fitness">
-                    <img src="assets/media/fitnesssite.png" alt="Thrive Fitness"
-                        loading="lazy">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-tag">Health & Fitness</div>
-                        <div class="portfolio-title">Thrive Fitness</div>
-                    </div>
-                    <div class="portfolio-link-icon">↗</div>
-                </a>
-            </div>
-
-            <div class="portfolio-item reveal">
-                <a href="assets/media/lyi.png" data-fancybox="pitem5"
-                    data-caption="Sanctum Techno">
+                <a href="assets/media/lyi.png" data-fancybox="pitem5" data-caption="Sanctum Techno">
                     <img src="assets/media/lyi.png" alt="Sanctum Techno" loading="lazy">
                     <div class="portfolio-overlay">
                         <div class="portfolio-tag">Music / Events</div>
@@ -261,83 +280,7 @@
             </div>
 
             <div class="portfolio-item reveal">
-                <a href="assets/media/thsecret.png" data-fancybox="pitem6"
-                    data-caption="T.H.Secret 420">
-                    <img src="assets/media/thsecret.png" alt="T.H.Secret 420"
-                        loading="lazy">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-tag">Brand</div>
-                        <div class="portfolio-title">T.H.Secret 420</div>
-                    </div>
-                    <div class="portfolio-link-icon">↗</div>
-                </a>
-            </div>
-
-            <div class="portfolio-item reveal">
-                <a href="assets/media/gtasite.png" data-fancybox="pitem7"
-                    data-caption="FiveRP">
-                    <img src="assets/media/gtasite.png" alt="FiveRP" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-tag">Gaming</div>
-                        <div class="portfolio-title">FiveRP</div>
-                    </div>
-                    <div class="portfolio-link-icon">↗</div>
-                </a>
-            </div>
-
-            <div class="portfolio-item reveal">
-                <a href="assets/media/syntack.png" data-fancybox="pitem8"
-                    data-caption="Team Syntack">
-                    <img src="assets/media/syntack.png" alt="Team Syntack" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-tag">Web Studio</div>
-                        <div class="portfolio-title">Team Syntack</div>
-                    </div>
-                    <div class="portfolio-link-icon">↗</div>
-                </a>
-            </div>
-
-            <div class="portfolio-item reveal">
-                <a href="assets/media/bh.png" data-fancybox="pitem9"
-                    data-caption="BlockHead Client">
-                    <img src="assets/media/bh.png" alt="BlockHead" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-tag">Gaming</div>
-                        <div class="portfolio-title">Minecraft Mod Client Landing Site</div>
-                    </div>
-                    <div class="portfolio-link-icon">↗</div>
-                </a>
-            </div>
-
-            <div class="portfolio-item reveal">
-                <a href="assets/media/repairshop.png" data-fancybox="pitem10"
-                    data-caption="Repairs By Daino">
-                    <img src="assets/media/repairshop.png" alt="Repairs By Daino"
-                        loading="lazy">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-tag">Repair Shop</div>
-                        <div class="portfolio-title">Repairs By Daino</div>
-                    </div>
-                    <div class="portfolio-link-icon">↗</div>
-                </a>
-            </div>
-
-            <div class="portfolio-item reveal">
-                <a href="assets/media/scs.png" data-fancybox="pitem11"
-                    data-caption="Silk Chronic Studio">
-                    <img src="assets/media/scs.png" alt="Silk Chronic Studio"
-                        loading="lazy">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-tag">Studio</div>
-                        <div class="portfolio-title">Silk Chronic Studio</div>
-                    </div>
-                    <div class="portfolio-link-icon">↗</div>
-                </a>
-            </div>
-
-            <div class="portfolio-item reveal">
-                <a href="assets/media/bacustoms.png" data-fancybox="pitem12"
-                    data-caption="BA Customs">
+                <a href="assets/media/bacustoms.png" data-fancybox="pitem12" data-caption="BA Customs">
                     <img src="assets/media/bacustoms.png" alt="BA Customs" loading="lazy">
                     <div class="portfolio-overlay">
                         <div class="portfolio-tag">Automotive</div>
@@ -348,12 +291,88 @@
             </div>
 
             <div class="portfolio-item reveal">
-                <a href="assets/media/bamaps.png" data-fancybox="pitem13"
-                    data-caption="Tuning Portal">
+                <a href="assets/media/bamaps.png" data-fancybox="pitem13" data-caption="Tuning Portal">
                     <img src="assets/media/bamaps.png" alt="Tuning Portal" loading="lazy">
                     <div class="portfolio-overlay">
                         <div class="portfolio-tag">Automotive</div>
                         <div class="portfolio-title">Tuning Portal</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="assets/media/fitnesssite.png" data-fancybox="pitem4" data-caption="Thrive Fitness">
+                    <img src="assets/media/fitnesssite.png" alt="Thrive Fitness" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Health & Fitness</div>
+                        <div class="portfolio-title">Thrive Fitness</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="assets/media/thsecret.png" data-fancybox="pitem6" data-caption="T.H.Secret 420">
+                    <img src="assets/media/thsecret.png" alt="T.H.Secret 420" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Brand</div>
+                        <div class="portfolio-title">THSecret420</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="assets/media/gtasite.png" data-fancybox="pitem7" data-caption="FiveRP">
+                    <img src="assets/media/gtasite.png" alt="FiveRP" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Gaming</div>
+                        <div class="portfolio-title">FiveRP</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="assets/media/syntack.png" data-fancybox="pitem8" data-caption="Team Syntack">
+                    <img src="assets/media/syntack.png" alt="Team Syntack" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Studio</div>
+                        <div class="portfolio-title">Team Syntack</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="assets/media/bh.png" data-fancybox="pitem9" data-caption="BlockHead Client">
+                    <img src="assets/media/bh.png" alt="BlockHead" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Gaming</div>
+                        <div class="portfolio-title">Minecraft Mod Client Landing Site</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="assets/media/repairshop.png" data-fancybox="pitem10" data-caption="Repairs By Daino">
+                    <img src="assets/media/repairshop.png" alt="Repairs By Daino" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Studio</div>
+                        <div class="portfolio-title">Repairs By Daino</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="assets/media/scs.png" data-fancybox="pitem11" data-caption="Silk Chronic Studio">
+                    <img src="assets/media/scs.png" alt="Silk Chronic Studio" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Studio</div>
+                        <div class="portfolio-title">Silk Chronic Studio</div>
                     </div>
                     <div class="portfolio-link-icon">↗</div>
                 </a>
@@ -372,10 +391,8 @@
             </div>
 
             <div class="portfolio-item reveal">
-                <a href="assets/media/suprasite.png" data-fancybox="pitem15"
-                    data-caption="TRD Supra Clusters">
-                    <img src="assets/media/suprasite.png" alt="TRD Supra Clusters"
-                        loading="lazy">
+                <a href="assets/media/suprasite.png" data-fancybox="pitem15" data-caption="TRD Supra Clusters">
+                    <img src="assets/media/suprasite.png" alt="TRD Supra Clusters" loading="lazy">
                     <div class="portfolio-overlay">
                         <div class="portfolio-tag">Automotive</div>
                         <div class="portfolio-title">TRD Supra Clusters</div>
@@ -385,39 +402,17 @@
             </div>
 
             <div class="portfolio-item reveal">
-                <a href="assets/media/paste.png" data-fancybox="pitem16"
-                    data-caption="Paste UI">
+                <a href="assets/media/paste.png" data-fancybox="pitem16" data-caption="Paste UI">
                     <img src="assets/media/paste.png" alt="Paste UI" loading="lazy">
                     <div class="portfolio-overlay">
-                        <div class="portfolio-tag">UI Tool</div>
+                        <div class="portfolio-tag">UI / UX</div>
                         <div class="portfolio-title">Paste UI</div>
                     </div>
                     <div class="portfolio-link-icon">↗</div>
                 </a>
             </div>
 
-            <div class="portfolio-item reveal">
-                <a href="assets/media/wellnessgroup.png" data-fancybox="pitem17"
-                    data-caption="Wellness Group">
-                    <img src="assets/media/wellnessgroup.png" alt="Wellness Group" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-tag">Community</div>
-                        <div class="portfolio-title">Caersws & Llanidloes Wellness</div>
-                    </div>
-                    <div class="portfolio-link-icon">↗</div>
-                </a>
-            </div>
-            <div class="portfolio-item reveal">
-                <a href="assets/media/sax.png" data-fancybox="pitem18"
-                    data-caption="Sax To The Rhythm">
-                    <img src="assets/media/sax.png" alt="Sax To The Rhythm" loading="lazy">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-tag">Artist</div>
-                        <div class="portfolio-title">Sax To The Rhythm</div>
-                    </div>
-                    <div class="portfolio-link-icon">↗</div>
-                </a>
-            </div>
+
         </div>
     </section>
 
@@ -507,7 +502,7 @@
         <div class="about-right reveal">
             <div class="about-photo-wrap">
                 <div class="about-photo-frame">
-                    <img src="https://rebelowebdesign.com/assets/media/pic.png" alt="Kristopher Rebelo">
+                    <img src="assets/media/pic.png" alt="Kristopher Rebelo">
                 </div>
             </div>
         </div>

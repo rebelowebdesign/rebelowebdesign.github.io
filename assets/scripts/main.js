@@ -1,4 +1,3 @@
-// Particle mesh canvas
 const canvas = document.getElementById('heroCanvas');
 const ctx = canvas.getContext('2d');
 let particles = [];
@@ -26,7 +25,6 @@ function initParticles() {
 function drawMesh() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Draw connecting lines
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
       const dx = particles[i].x - particles[j].x;
@@ -44,7 +42,6 @@ function drawMesh() {
     }
   }
 
-  // Draw nodes
   for (const p of particles) {
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
@@ -121,7 +118,7 @@ document.querySelectorAll('a, button').forEach(el => {
   });
 });
 
-// Nav scroll effect
+
 const nav = document.getElementById('mainNav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 60);
@@ -146,6 +143,21 @@ const observer = new IntersectionObserver((entries) => {
     if (e.isIntersecting) { e.target.classList.add('visible'); }
   });
 }, { threshold: 0.1 });
+
+
+document.getElementById('portfolioFilter').addEventListener('change', function() {
+  const selected = this.value;
+  document.querySelectorAll('.portfolio-item').forEach(item => {
+    const tag = item.querySelector('.portfolio-tag');
+    if (!tag) return;
+    if (selected === 'all' || tag.textContent.trim() === selected) {
+      item.classList.remove('hidden');
+    } else {
+      item.classList.add('hidden');
+    }
+  });
+});
+
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // fancybox
