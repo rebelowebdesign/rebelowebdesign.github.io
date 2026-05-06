@@ -146,13 +146,13 @@ nav.scrolled {
 
 .nav-cta {
     background: var(--accent) !important;
-    color: var(--bg) !important;
+    color: #fff !important;
     padding: 8px 20px !important;
     font-weight: 500 !important;
 }
 
 .nav-cta:hover {
-    background: var(--text) !important;
+    background: var(--text) !important; color: var(--bg) !important;
 }
 
 
@@ -346,14 +346,14 @@ nav.scrolled {
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--bg);
+  color: #fff;
   background: var(--accent);
   padding: 14px 28px;
   text-decoration: none;
   font-weight: 500;
   transition: background 0.2s;
 }
-.services-cta:hover { background: var(--text); }
+.services-cta:hover { background: var(--text); color:var(--bg)}
 
 
 .services-list {
@@ -761,7 +761,7 @@ nav.scrolled {
 }
 
 .contact-link-item:hover {
-    color: var(--bg);
+    color: var(--text);
     border-color: var(--accent);
 }
 
