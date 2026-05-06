@@ -1,449 +1,561 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design by Kristopher Rebelo | Custom Websites &amp; Ecommerce solutions</title>
-    <meta name="description" content="Web Design by Kristopher Rebelo">
-    <meta name="keywords" content="web design, SEO, Shopify, WordPress, custom websites, Kristopher Rebelo, small business websites">
-    <meta name="author" content="Rebelo Web Design">
+    <title>Rebelo Web Design | Kristopher Rebelo</title>
+    <meta name="description"
+        content="Rebelo Web Design — custom Shopify, WordPress & hand-coded websites for small businesses, brands, artists and independents. Based in Fall River, MA.">
+    <meta name="keywords"
+        content="web design, web designer, Shopify, WordPress, custom website, small business website, Fall River, Massachusetts, freelance web designer, SEO, DNS, domain">
+    <meta name="author" content="Kristopher Rebelo">
     <meta name="robots" content="index, follow">
-
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Rebelo Web Design">
-    <meta property="og:description" content="Web Design by Kristopher Rebelo">
-    <meta property="og:url" content="https://rebelowebdesign.com">
-    <meta property="og:site_name" content="https://rebelowebdesign.com">
-    <meta property="og:image" content="https://rebelowebdesign.com/assets/media/pic.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Rebelo Web Design">
-    <meta name="twitter:description" content="Creating and launching custom websites for small businesses, brands, artists and independents.">
-    <meta name="twitter:image" content="https://rebelowebdesign.com/assets/media/pic.png">
-    <meta name="twitter:site" content="@rebelowebdesign">
-
-    <link rel="icon" href="https://rebelowebdesign.com/favicon.ico">
+    <meta name="theme-color" content="#0a0a09">
     <link rel="canonical" href="https://rebelowebdesign.com/">
 
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/icons.css">
-    <!-- Fancybox CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.rel='stylesheet'">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rebelowebdesign.com/">
+    <meta property="og:title" content="Rebelo Web Design | Custom Websites for Small Businesses">
+    <meta property="og:description"
+        content="Custom Shopify, WordPress & hand-coded websites for small businesses, brands, artists and independents. Based in Fall River, MA.">
+    <meta property="og:image" content="https://rebelowebdesign.com/assets/media/pic.png">
+    <meta property="og:image:width" content="384">
+    <meta property="og:image:height" content="384">
+    <meta property="og:image:alt" content="Kristopher Rebelo — Rebelo Web Design">
+    <meta property="og:site_name" content="Rebelo Web Design">
+    <meta property="og:locale" content="en_US">
 
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Rebelo Web Design | Custom Websites for Small Businesses">
+    <meta name="twitter:description"
+        content="Custom Shopify, WordPress & hand-coded websites for small businesses, brands, artists and independents. Based in Fall River, MA.">
+    <meta name="twitter:image" content="https://rebelowebdesign.com/assets/media/pic.png">
+
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/faicons.css">
 </head>
 
-<body class="">
-    <div class="announce">
-        Connect via <a class="msg_btn" href="https://www.facebook.com/profile.php?id=61565895423776" target="__blank"><i class="fa-brands fa-facebook-messenger"></i> Messenger</a> today for a free quote.
+<body>
+
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">✕</button>
+        <a href="#hero" onclick="closeMobileMenu()">Home</a>
+        <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
     </div>
-    <div style="height: 73px;"></div>
-    <div class="container">
-        <div class="topnav" id="topnav">
-            <a style="margin-right:auto;border:none" href="/">
-                <div class="logo" style="
-                padding: 0;
-            ">
-                    <div class="audiowide R" style="
-                font-size: 43px;
-                height: 48px;
-            ">R</div>
-                    <div class="hexonia-bc rebelo" style="
-                font-size: 19px;
-            ">REBELO</div>
-                    <div class="hexonia-bc web_design" style="
-                font-size: 11px;
-            ">WEB DESIGN</div>
+
+
+    <nav id="mainNav">
+        <a href="#hero" class="nav-logo">K<span>.</span>REBELO</a>
+        <ul class="nav-links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+
+    <section id="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-grid-line"></div>
+        <div class="hero-grid-line"></div>
+        <div class="hero-grid-line"></div>
+
+        <div class="hero-eyebrow">Freelance Web Designer · Fall River, Massachusetts</div>
+        <h1 class="hero-name">
+            <span class="italic-word">Hello, I'm</span>
+            <span class="accent-word">KRISTOPHER</span><br>REBELO
+        </h1>
+        <div class="hero-sub">
+            <p class="hero-desc">I provide custom web solutions for small businesses, brands, artists & independents.
+                From Shopify storefronts to landing pages, to one-of-a-kind digital experiences.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-num">25</div>
+                    <div class="stat-label">Projects</div>
                 </div>
-            </a>
-
-            <a href="#p">Portfolio</a>
-
-            <!--<div class="dropdown">
-				<button class="dropbtn">Services
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="/">Web design</a>
-                    <a href="/">Website deployment</a>
-                    <a href="/">Host & domain management</a>
-				</div>
-			</div>-->
-            <a href="#c">Contact</a>
-            <a href="javascript:void(0);" style="color:white !important;" class="icon nav_toggler" onclick="navToggle()">☰</a>
-        </div>
-    </div>
-
-    <!-- intro -->
-    <div class="intro">
-        
-        <h1 style="line-height: 50px;font-size:40px">Hello 👋, I'm <span style="
-    padding: 3px 7px;
-    border-radius: 7px;
-    white-space: nowrap;
-">Kristopher Rebelo</span></h1>
-        <p style="color:#a1a1a1">I'm a freelance Web Designer based in Fall River, Massachusetts.</p>
-    </div>
-
-
-    <div class="services container">
-        <div class="techs">
-            <div class="tech reveal">
-                <div><i class="fa-brands fa-shopify"></i></div>
-                <div class="name">Shopify Websites</div>
-                <div>Sell products online right from your phone with a unique storefront for your business or brand.
+                <div class="stat-item">
+                    <div class="stat-num">13</div>
+                    <div class="stat-label">Yrs Experience</div>
                 </div>
-            </div>
-
-            <div class="tech reveal">
-                <div><i class="fa-brands fa-wordpress-simple"></i></div>
-                <div class="name">Wordpress Websites</div>
-                <div>Custom websites with content management needs such as blogs or landing pages.</div>
-            </div>
-
-            <div class="tech reveal">
-                <div><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                <div class="name">Custom Websites</div>
-                <div>Custom web solutions, no matter how unique a project is, if it's web-based, I can bring it to life.
+                <div class="stat-item">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-label">Yrs Freelance</div>
                 </div>
             </div>
         </div>
+    </section>
 
-    </div>
+    <section id="services">
+        <div class="services-inner">
 
+            <div class="services-left reveal">
+                <div class="section-tag">What I Build</div>
+                <h2 class="section-title">SERVICES</h2>
 
-    <!-- about -->
-    <div id="p" class="gallery_container" style="
-    margin-top: 5rem;
-    border-top: 1px solid #191919;
-">
-        <h1 style="text-align: center;margin-top: 4rem;">Portfolio</h1>
-        <p style="text-align: center;color: #a1a1a1;">View some of my past work in full detail.</p>
-        <section class="gallery">
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/frarts.png" data-caption="
-
-                ">
-                    <img src="assets/media/frarts.png" alt="Project 1">
-                </a>
-                <div class="hint">
-                    Greater Fall River Arts Association
-                </div>
+                <p class="services-pitch">Every project is hand-built to fit your brand — no templates, no shortcuts, no
+                    bloat. Just clean, fast websites that work.</p>
+                <a href="#contact" class="services-cta">Get a Free Quote →</a>
             </div>
 
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/aimes.png" data-caption="
+            <div class="services-right">
+                <div class="services-list">
 
-                ">
-                    <img src="assets/media/aimes.png">
-                </a>
-                <div class="hint">
-                    Aime's Auto Repair
+                    <div class="services-list-item reveal">
+                        <div class="sli-left">
+
+                            <span class="sli-icon"><i style="color:var(--accent)"
+                                    class="fa-solid fa-wand-magic-sparkles"></i></span>
+                        </div>
+                        <div class="sli-body">
+                            <h3 class="sli-name">Custom Website</h3>
+                            <p class="sli-desc">Hand-coded from scratch when your project needs something no existing
+                                platform can offer.</p>
+                        </div>
+                        <span class="sli-arrow">→</span>
+                    </div>
+
+                    <div class="services-list-item reveal" style="transition-delay:0.1s">
+                        <div class="sli-left">
+
+                            <span class="sli-icon"><i style="color:#95bf47" class="fa-brands fa-shopify"></i></span>
+                        </div>
+                        <div class="sli-body">
+                            <h3 class="sli-name">Shopify Storefront</h3>
+                            <p class="sli-desc">A storefront that sells for you — branded, fast, and manageable from
+                                your phone.</p>
+                        </div>
+                        <span class="sli-arrow">→</span>
+                    </div>
+
+
+                    <div class="services-list-item reveal" style="transition-delay:0.2s">
+                        <div class="sli-left">
+
+                            <span class="sli-icon"><i style="background-color: #1745bf;border-radius: 50%;"
+                                    class="fa-brands fa-wordpress-simple"></i></span>
+                        </div>
+                        <div class="sli-body">
+                            <h3 class="sli-name">WordPress Website</h3>
+                            <p class="sli-desc">A site you fully own and can update yourself — a very versatile
+                                platform.</p>
+                        </div>
+                        <span class="sli-arrow">→</span>
+                    </div>
+
+                    <div class="services-list-item reveal" style="transition-delay:0.3s">
+                        <div class="sli-left">
+
+                            <span class="sli-icon"><i style="color:#f6821f" class="fa-brands fa-cloudflare"></i></span>
+                        </div>
+                        <div class="sli-body">
+                            <h3 class="sli-name">DNS & Domain Management</h3>
+                            <p class="sli-desc">I provide reliable dns and domain services. Registration, management,
+                                migration, you name it.</p>
+                        </div>
+                        <span class="sli-arrow">→</span>
+                    </div>
+
                 </div>
-            </div>
 
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/ef.png" data-caption="
-
-                ">
-                    <img src="assets/media/ef.png" alt="Project 1">
-                </a>
-                <div class="hint">
-                    EuroFibre Networks Fibre Solutions
+                <div class="services-also reveal">
+                    <span class="services-also-label">Other Services</span>
+                    <span class="services-also-tag">SEO Optimization</span>
+                    <span class="services-also-tag">Troubleshooting</span>
+                    <span class="services-also-tag">Layout Refinement</span>
+                    <span class="services-also-tag">Custom Scripts</span>
                 </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/fitnesssite.png" data-caption="
-        
-                ">
-                    <img src="assets/media/fitnesssite.png">
-                </a>
-                <div class="hint">
-                    Thrive Fitness
-                </div>
-            </div>
-
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/lyi.png" data-caption="
-
-                ">
-                    <img src="assets/media/lyi.png">
-                </a>
-                <div class="hint">
-                    Sanctum Techno
-                </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/thsecret.png" data-caption="
-
-                ">
-                    <img src="assets/media/thsecret.png">
-                </a>
-                <div class="hint">
-                    T.H.Secret 420
-                </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/gtasite.png" data-caption="
-
-                ">
-                    <img src="assets/media/gtasite.png">
-                </a>
-                <div class="hint">
-                    FiveRP
-                </div>
-            </div>
-
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/syntack.png" data-caption="
-
-                ">
-                    <img src="assets/media/syntack.png">
-                </a>
-                <div class="hint">
-                    Team Syntack
-                </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/bh.png" data-caption="
-
-                ">
-                    <img src="assets/media/bh.png">
-                </a>
-                <div class="hint">
-                    BlockHead Client
-                </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/repairshop.png" data-caption="
-
-                ">
-                    <img src="assets/media/repairshop.png">
-                </a>
-                <div class="hint">
-                    Repairs By Daino
-                </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/scs.png" data-caption="
-
-                ">
-                    <img src="assets/media/scs.png">
-                </a>
-                <div class="hint">
-                    Silk Chronic Studio
-                </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/bacustoms.png" data-caption="
-
-                ">
-                    <img src="assets/media/bacustoms.png">
-                </a>
-                <div class="hint">
-                    BA Customs
-                </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/bamaps.png" data-caption="
-
-                ">
-                    <img src="assets/media/bamaps.png">
-                </a>
-                <div class="hint">
-                    Tuning Portal
-                </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/mtgsim.jpg" data-caption="
-
-                ">
-                    <img src="assets/media/mtgsim.jpg">
-                </a>
-                <div class="hint">
-                    Magic: The Gathering web simulator
-                </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/suprasite.png" data-caption="
-
-                ">
-                    <img src="assets/media/suprasite.png">
-                </a>
-                <div class="hint">
-                    TRD Supra Clusters
-                </div>
-            </div>
-
-            <div class="relative">
-                <a data-fancybox="gallery" href="assets/media/paste.png" data-caption="
-
-                ">
-                    <img src="assets/media/paste.png">
-                </a>
-                <div class="hint">
-                    Paste UI
-                </div>
-            </div>
-
-        </section>
-    </div><div class="main_container" style="border-top: 1px solid #212121;margin-top: 114px;border-bottom: 1px solid #212121;">
-        <div class="logo reveal">
-            <div class="audiowide R">R</div>
-            <div class="hexonia-bc rebelo">REBELO</div>
-            <div class="hexonia-bc web_design">WEB DESIGN</div>
-        </div>
-    </div><div class="about container">
-        <div style="max-width: 545px;">
-            <h2>About Me</h2>
-            <p>It all started in 2011. A game that I played, Habbo Hotel, had an active community of developers that
-                were trying to emulate a "retro" version of the official game, using PHP, CSS, HTML, JS as the web stack
-                and C# for the emulator server. </p>
-            <p>It was such a huge community, eventually I wanted to also host my own custom Habbo hotel website too. I
-                did it, but had no idea what I was doing at the time. I didn't know what source code was, i thought I
-                was just modifying "stuff for a game", as broad as that sounds. I had no idea what a programming
-                language, or any of that was. But from there, I began.</p>
-            <p>Fast forward to 2017. With years of experience and learning, I finally begin to see real progress in my
-                journey. Starting many side projects for fun, learning new technologies along the way, and diving into
-                the world of Freelancing with Wordpress and PHP.</p>
-            <p>In 2024, I finally felt ready to fully commit to my skills and proudly perform freelance services under
-                my last name; Rebelo Web Design.</p>
-
-            <h2>Languages I Use</h2>
-            <div class="langs">
-                <div>
-                    <i class="fa-brands fa-css3-alt"></i>
-                </div>
-                <div>
-                    <i class="fa-brands fa-html5"></i>
-                </div>
-                <div>
-                    <i class="fa-brands fa-php"></i>
-                </div>
-                <div>
-                    <i class="fa-brands fa-js"></i>
-                </div>
-                <div>
-                    <i class="fa-brands fa-python"></i>
-                </div>
-            </div>
-        </div>
-        <div>
-            <img src="assets/media/side.png" alt="Habbo Hotel">
-        </div>
-    </div>
-
-    
-
-    
-
-    <div id="c" class="container">
-        <div class="contact">
-            <h1>Contact</h1>
-
-            <div style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 1.2rem;
-            ">
-                <div>
-                    <p><i class="fa-brands fa-facebook-f"></i> <a href="https://www.facebook.com/profile.php?id=61565895423776">Rebelo Web Design</a></p>
-                    <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/rebelowebdesign">@RebeloWebDesign</a></p>
-                    <p><i class="fa-solid fa-location-dot"></i> Massachusetts, USA</p>
-                    <p></p>
-                </div>
-                <a class="msg_btn" href="https://www.facebook.com/profile.php?id=61565895423776" target="__blank"><i class="fa-brands fa-facebook-messenger"></i> Messenger</a>
-                <a class="email_btn" href="mailto:rebelowebdesign@gmail.com"><i class="fa-solid fa-envelope"></i>
-                    Email</a>
-
             </div>
 
         </div>
-    </div>
-    <div class="container" style="
-    padding: 1.5rem;
-    font-size: 12px;
-    display: flex;
-">
-        <div style="
-    margin-left: auto;
-">Rebelo Web Design, by Kristopher Rebelo - 2026 ©</div>
-    </div>
+    </section>
 
 
-    <script type="text/javascript">
-        // navigation toggle script
-        function navToggle() {
-            var x = document.getElementById("topnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
-    <script type="text/javascript">
-        document.querySelectorAll('.tech').forEach(item => {
-            item.addEventListener('click', function () {
-                if (!this.classList.contains('flipped')) {
-                    this.classList.add('flipped');
-                    setTimeout(() => {
-                        this.classList.remove('flipped');
-                    }, 1000);
-                }
-            });
-        });
+    <section id="portfolio">
+        <div class="section-header reveal">
+            <div>
+                <div class="section-tag">Selected Work</div>
+                <h2 class="section-title">PORTFOLIO</h2>
+            </div>
+        </div>
 
-        window.addEventListener('load', reveal);
-        window.addEventListener('scroll', reveal);
-        function reveal() {
-            var elms = document.querySelectorAll('.reveal');
-            for (var i = 0; i < elms.length; i++) {
-                var windowHeight = window.innerHeight;
-                var revealTop = elms[i].getBoundingClientRect().top;
-                var revealPoint = 150;
+        <div class="portfolio-grid">
 
-                if (revealTop < windowHeight - revealPoint && !elms[i].classList.contains('done')) {
-                    elms[i].classList.add('flipped');
-                    setTimeout(function (el) {
-                        el.classList.remove('flipped');
-                        el.classList.add('done');
-                    }, 1000, elms[i]);
-                }
-            }
-        }
-    </script>
-    <!-- jQuery (required for Fancybox) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Fancybox JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('[data-fancybox="gallery"]').fancybox({
-                wheel: false,
-                buttons: [
-                    'slideShow',
-                    'fullScreen',
-                    'thumbs',
-                    'close'
-                ],
-                loop: true,
-                protect: true
-            });
-        });
-    </script>
+            <div class="portfolio-item featured reveal">
+                <a href="https://rebelowebdesign.com/assets/media/frarts.png" data-fancybox="pitem1"
+                    data-caption="Greater Fall River Arts Association">
+                    <img src="https://rebelowebdesign.com/assets/media/frarts.png"
+                        alt="Greater Fall River Arts Association" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Arts / Nonprofit</div>
+                        <div class="portfolio-title">Fall River Arts Association</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/aimes.png" data-fancybox="pitem2"
+                    data-caption="Aime's Auto Repair">
+                    <img src="https://rebelowebdesign.com/assets/media/aimes.png" alt="Aime's Auto Repair"
+                        loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Auto Repair</div>
+                        <div class="portfolio-title">Aime's Auto Repair</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/ef.png" data-fancybox="pitem3"
+                    data-caption="EuroFibre Networks">
+                    <img src="https://rebelowebdesign.com/assets/media/ef.png" alt="EuroFibre Networks" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Telecom</div>
+                        <div class="portfolio-title">EuroFibre Networks</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/fitnesssite.png" data-fancybox="pitem4"
+                    data-caption="Thrive Fitness">
+                    <img src="https://rebelowebdesign.com/assets/media/fitnesssite.png" alt="Thrive Fitness"
+                        loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Health & Fitness</div>
+                        <div class="portfolio-title">Thrive Fitness</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/lyi.png" data-fancybox="pitem5"
+                    data-caption="Sanctum Techno">
+                    <img src="https://rebelowebdesign.com/assets/media/lyi.png" alt="Sanctum Techno" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Music / Events</div>
+                        <div class="portfolio-title">Sanctum Techno</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/thsecret.png" data-fancybox="pitem6"
+                    data-caption="T.H.Secret 420">
+                    <img src="https://rebelowebdesign.com/assets/media/thsecret.png" alt="T.H.Secret 420"
+                        loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Brand</div>
+                        <div class="portfolio-title">T.H.Secret 420</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/gtasite.png" data-fancybox="pitem7"
+                    data-caption="FiveRP">
+                    <img src="https://rebelowebdesign.com/assets/media/gtasite.png" alt="FiveRP" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Gaming</div>
+                        <div class="portfolio-title">FiveRP</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/syntack.png" data-fancybox="pitem8"
+                    data-caption="Team Syntack">
+                    <img src="https://rebelowebdesign.com/assets/media/syntack.png" alt="Team Syntack" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Esports</div>
+                        <div class="portfolio-title">Team Syntack</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/bh.png" data-fancybox="pitem9"
+                    data-caption="BlockHead Client">
+                    <img src="https://rebelowebdesign.com/assets/media/bh.png" alt="BlockHead" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Client</div>
+                        <div class="portfolio-title">BlockHead</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/repairshop.png" data-fancybox="pitem10"
+                    data-caption="Repairs By Daino">
+                    <img src="https://rebelowebdesign.com/assets/media/repairshop.png" alt="Repairs By Daino"
+                        loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Repair Shop</div>
+                        <div class="portfolio-title">Repairs By Daino</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/scs.png" data-fancybox="pitem11"
+                    data-caption="Silk Chronic Studio">
+                    <img src="https://rebelowebdesign.com/assets/media/scs.png" alt="Silk Chronic Studio"
+                        loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Studio</div>
+                        <div class="portfolio-title">Silk Chronic Studio</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/bacustoms.png" data-fancybox="pitem12"
+                    data-caption="BA Customs">
+                    <img src="https://rebelowebdesign.com/assets/media/bacustoms.png" alt="BA Customs" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Automotive</div>
+                        <div class="portfolio-title">BA Customs</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/bamaps.png" data-fancybox="pitem13"
+                    data-caption="Tuning Portal">
+                    <img src="https://rebelowebdesign.com/assets/media/bamaps.png" alt="Tuning Portal" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Automotive</div>
+                        <div class="portfolio-title">Tuning Portal</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/mtgsim.jpg" data-fancybox="pitem14"
+                    data-caption="Magic: The Gathering Web Simulator">
+                    <img src="https://rebelowebdesign.com/assets/media/mtgsim.jpg" alt="MTG Simulator" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Web App</div>
+                        <div class="portfolio-title">MTG Simulator</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/suprasite.png" data-fancybox="pitem15"
+                    data-caption="TRD Supra Clusters">
+                    <img src="https://rebelowebdesign.com/assets/media/suprasite.png" alt="TRD Supra Clusters"
+                        loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">Automotive</div>
+                        <div class="portfolio-title">TRD Supra Clusters</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+
+            <div class="portfolio-item reveal">
+                <a href="https://rebelowebdesign.com/assets/media/paste.png" data-fancybox="pitem16"
+                    data-caption="Paste UI">
+                    <img src="https://rebelowebdesign.com/assets/media/paste.png" alt="Paste UI" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tag">UI Tool</div>
+                        <div class="portfolio-title">Paste UI</div>
+                    </div>
+                    <div class="portfolio-link-icon">↗</div>
+                </a>
+            </div>
+        </div>
+    </section>
 
 
-</body></html>
+    <section id="testimonials">
+        <div class="section-header reveal">
+            <div>
+                <div class="section-tag">Kind Words</div>
+                <h2 class="section-title">CLIENTS</h2>
+            </div>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">"Kristopher produces great work, would gladly work with him again!"</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-name">Chris G.</div>
+                    <div class="testimonial-company">Silk Chronic Studio</div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal" style="transition-delay:0.1s">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">"Damnn that looks sexy bro"</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-name">Anonymous</div>
+                    <div class="testimonial-company">Private work</div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal" style="transition-delay:0.2s">
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">"Reliable, talented, and great to communicate with. Pleasure working with
+                    Kristopher."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-name">Alex M.</div>
+                    <div class="testimonial-company">Thrive Fitness</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-left reveal">
+            <div class="section-tag">Background</div>
+            <h2 class="section-title" style="font-size: clamp(40px,5vw,72px);">MY<br>STORY</h2>
+
+            <div class="about-story">
+                <p>It all started in <strong>2011</strong>. A game I played — Habbo Hotel — had an active developer
+                    community trying to emulate a "retro" version using PHP, CSS, HTML, JS and C# for the server. I
+                    jumped in, had no idea what I was doing, but from there, I began.</p>
+                <p>Fast forward to <strong>2017</strong>. Years of experience crystallized into real progress — side
+                    projects, new technologies, diving into freelancing with WordPress and PHP.</p>
+                <p>In <strong>2024</strong>, I finally felt ready to fully commit to my craft and proudly launch
+                    freelance services under my name: <strong>Rebelo Web Design</strong>.</p>
+            </div>
+
+            <div class="timeline reveal" style="margin-top:48px">
+                <div class="timeline-item">
+                    <div class="timeline-year">2011</div>
+                    <div class="timeline-note">First lines of HTML/CSS written</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2017</div>
+                    <div class="timeline-note">Real freelance beginnings with WordPress & PHP projects</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-note">Launched Rebelo Web Design as a full freelance brand</div>
+                </div>
+            </div>
+
+            <div class="skills-row reveal" style="margin-top:40px">
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">WordPress</span>
+                <span class="skill-pill">Shopify</span>
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">SEO</span>
+                <span class="skill-pill">C#</span>
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">DNS</span>
+            </div>
+        </div>
+
+        <div class="about-right reveal">
+            <div class="about-photo-wrap">
+                <div class="about-photo-frame">
+                    <img src="https://rebelowebdesign.com/assets/media/pic.png" alt="Kristopher Rebelo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="contact-left reveal">
+            <div class="section-tag">Let's Work</div>
+            <h2 class="section-title">GET IN<br>TOUCH</h2>
+            <p class="contact-tagline">Have a project in mind? Reach out for a free quote — no commitment, no pressure.
+                Let's talk about what you're building.</p>
+
+            <div class="contact-links">
+                <a href="https://www.facebook.com/profile.php?id=61565895423776" class="contact-link-item"
+                    target="_blank">
+                    <div>
+
+                        <div class="contact-link-label"><i class="fa-brands fa-facebook-messenger"></i> Messenger</div>
+                        <div class="contact-link-val">Free Quote via Facebook</div>
+                    </div>
+                    <div class="contact-arrow">→</div>
+                </a>
+                <a href="mailto:rebelowebdesign@gmail.com" class="contact-link-item">
+                    <div>
+                        <div class="contact-link-label"><i class="fa-solid fa-envelope"></i> Email</div>
+                        <div class="contact-link-val">rebelowebdesign@gmail.com</div>
+                    </div>
+                    <div class="contact-arrow">→</div>
+                </a>
+                <a href="https://www.instagram.com/rebelowebdesign" class="contact-link-item" target="_blank">
+                    <div>
+                        <div class="contact-link-label"><i class="fa-brands fa-instagram"></i> Instagram</div>
+                        <div class="contact-link-val">@rebelowebdesign</div>
+                    </div>
+                    <div class="contact-arrow">→</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-right reveal">
+            <div class="location-block">
+                <div class="location-label">Based In</div>
+                <div class="location-city">FALL RIVER</div>
+                <div class="location-state">Massachusetts, USA</div>
+                <div style="display: flex;justify-content: center;">
+                    <img src="assets/media/fr.svg" style="filter: invert(1);width:100%;max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-logo">REBELO WEB DESIGN</div>
+        <div class="footer-copy">© 2026 Kristopher Rebelo. All rights reserved.</div>
+        <ul class="footer-links">
+            <li><a href="https://www.facebook.com/profile.php?id=61565895423776" target="_blank">FB</a></li>
+            <li><a href="https://www.instagram.com/rebelowebdesign" target="_blank">IG</a></li>
+            <li><a href="mailto:rebelowebdesign@gmail.com">Email</a></li>
+        </ul>
+    </footer>
+
+    <!-- jquery primarily for fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>

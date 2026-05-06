@@ -95,7 +95,9 @@
 .fa-github:before {
     content: "\f09b";
 }
-
+.fa-cloudflare:before{
+    content:"\e07d";
+}
 :root,
 :host {
     --fa-style-family-classic: 'Font Awesome 6 Free';
