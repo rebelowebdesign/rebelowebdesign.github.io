@@ -1,4 +1,3 @@
-// Particle mesh canvas
 const canvas = document.getElementById('heroCanvas');
 const ctx = canvas.getContext('2d');
 let particles = [];
@@ -6,9 +5,8 @@ const COUNT = 80;
 const ACCENT = '189, 40, 40';
 
 function resizeCanvas() {
-  const hero = document.getElementById('hero');
-  canvas.width = hero.offsetWidth;
-  canvas.height = hero.offsetHeight;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 }
 
 function initParticles() {
@@ -26,8 +24,6 @@ function initParticles() {
 
 function drawMesh() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  // Draw connecting lines
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
       const dx = particles[i].x - particles[j].x;
@@ -44,8 +40,6 @@ function drawMesh() {
       }
     }
   }
-
-  // Draw nodes
   for (const p of particles) {
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
@@ -72,7 +66,11 @@ function meshLoop() {
 resizeCanvas();
 initParticles();
 meshLoop();
-window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
+
+window.addEventListener('resize', () => {
+  resizeCanvas();
+  initParticles();
+});
 
 // cursor
 const cursor = document.getElementById('cursor');
