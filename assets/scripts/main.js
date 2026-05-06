@@ -6,8 +6,9 @@ const COUNT = 80;
 const ACCENT = '189, 40, 40';
 
 function resizeCanvas() {
-  canvas.width = canvas.offsetWidth;
-  canvas.height = canvas.offsetHeight;
+  const hero = document.getElementById('hero');
+  canvas.width = hero.offsetWidth;
+  canvas.height = hero.offsetHeight;
 }
 
 function initParticles() {

@@ -1030,3 +1030,8 @@ footer {
         gap: 20px;
     }
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .cursor, .cursor-ring { display: none !important; }
+  body { cursor: auto; }
+}
