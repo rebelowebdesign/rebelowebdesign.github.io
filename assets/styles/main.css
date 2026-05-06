@@ -134,7 +134,7 @@ nav.scrolled {
 .nav-links a {
     color: var(--muted);
     text-decoration: none;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     transition: color 0.2s;
@@ -260,7 +260,7 @@ nav.scrolled {
 .hero-desc {
     max-width: 360px;
     color: var(--muted);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.8;
 }
 
@@ -333,7 +333,7 @@ nav.scrolled {
 }
 .services-pitch {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 16px;
   line-height: 2;
   margin-top: 28px;
   max-width: 320px;
@@ -386,7 +386,7 @@ nav.scrolled {
   color: var(--border);
   letter-spacing: 0.1em;
 }
-.sli-icon { font-size: 52px; }
+.sli-icon { font-size: 36px; }
 .sli-name {
   font-family: var(--font-display);
   font-size: 28px;
@@ -583,7 +583,7 @@ nav.scrolled {
   .about-left {}
   .about-story {
     color: var(--muted);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 2;
     margin-top: 48px;
   }
@@ -611,7 +611,7 @@ nav.scrolled {
     margin-top: 24px;
   }
   .skill-pill {
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     border: 1px solid var(--border);
@@ -643,7 +643,7 @@ nav.scrolled {
     line-height: 1;
   }
   .timeline-note {
-    font-size: 11px;
+    font-size: 16px;
     color: var(--muted);
     margin-top: 4px;
     line-height: 1.7;
@@ -676,7 +676,7 @@ nav.scrolled {
   opacity: 0.6;
 }
 .testimonial-text {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
   line-height: 2;
   margin-bottom: 32px;
@@ -715,7 +715,7 @@ nav.scrolled {
 
 .contact-tagline {
     color: var(--muted);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 2;
     margin-top: 32px;
     max-width: 380px;
@@ -766,13 +766,13 @@ nav.scrolled {
 }
 
 .contact-link-label {
-    font-size: 11px;
+    font-size: 18px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
 }
 
 .contact-link-val {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .contact-arrow {
