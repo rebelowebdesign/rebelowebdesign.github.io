@@ -45,12 +45,6 @@
 </head>
 
 <body>
-
-
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-ring" id="cursorRing"></div>
-
-
     <div class="mobile-menu" id="mobileMenu">
         <button class="mobile-close" id="mobileClose">✕</button>
         <a href="#hero" onclick="closeMobileMenu()">Home</a>
@@ -121,7 +115,7 @@
                     <div class="services-list-item reveal">
                         <div class="sli-left">
 
-                            <span class="sli-icon"><i style="color:var(--accent)"
+                            <span class="sli-icon"><i id="spin" style="color:var(--accent)"
                                     class="fa-solid fa-wand-magic-sparkles"></i></span>
                         </div>
                         <div class="sli-body">
@@ -135,7 +129,7 @@
                     <div class="services-list-item reveal" style="transition-delay:0.1s">
                         <div class="sli-left">
 
-                            <span class="sli-icon"><i style="color:#95bf47" class="fa-brands fa-shopify"></i></span>
+                            <span class="sli-icon"><i id="spin" style="color:#95bf47" class="fa-brands fa-shopify"></i></span>
                         </div>
                         <div class="sli-body">
                             <h3 class="sli-name">Shopify Storefront</h3>
@@ -149,7 +143,7 @@
                     <div class="services-list-item reveal" style="transition-delay:0.2s">
                         <div class="sli-left">
 
-                            <span class="sli-icon"><i style="background-color: #1745bf;border-radius: 50%;"
+                            <span class="sli-icon"><i id="spin" style="background-color: #1745bf;border-radius: 50%;"
                                     class="fa-brands fa-wordpress-simple"></i></span>
                         </div>
                         <div class="sli-body">
@@ -163,7 +157,7 @@
                     <div class="services-list-item reveal" style="transition-delay:0.3s">
                         <div class="sli-left">
 
-                            <span class="sli-icon"><i style="color:#f6821f" class="fa-brands fa-cloudflare"></i></span>
+                            <span class="sli-icon"><i id="spin" style="color:#f6821f" class="fa-brands fa-cloudflare"></i></span>
                         </div>
                         <div class="sli-body">
                             <h3 class="sli-name">DNS & Domain Management</h3>
@@ -549,7 +543,7 @@
                 <div class="location-city">FALL RIVER</div>
                 <div class="location-state">Massachusetts, USA</div>
                 <div style="display: flex;justify-content: center;">
-                    <img src="assets/media/fr.jpg" style="width:100%;max-width: 300px;">
+                    <img src="assets/media/fr.jpg" style="width:100%;max-width: 300px;border-radius: 4px;">
                 </div>
             </div>
         </div>
